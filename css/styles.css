@@ -27,19 +27,41 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #ddd; /* grosor caja de detalle de producto */
+th {
+    border: 1px solid #000000; /* grosor caja de detalle de producto */
+    padding: 8px; /* largo de detalle de caja de producto */
+    text-align: center;
+    background-color: #a0a0a091; /* Color de fondo para el encabezado */
+} 
+
+td {
+    border: 1px solid #000000; /* grosor caja de detalle de producto */
     padding: 8px; /* largo de detalle de caja de producto */
     text-align: center;
 }
 
 button { /* botones */
     display: block;
+    width: 500px; /* Ancho del botón */
     margin: 10px auto;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #007BFF; /* Color azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
 }
+
+button:hover { /* Color al pasar el mouse */
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+button:active { /* Color al hacer clic */
+    background-color: #004085; /* Azul aún más oscuro */
+}
+
 
 @media print {
     button {
