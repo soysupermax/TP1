@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif; /* margen */
+    margin: 20px;
+}
+
+h1 {
+    text-align: center; /* titulo */
+}
+
+form {
+    max-width: 800px; /* separacion lado izquierdo */
+    margin: auto;
+}
+
+fieldset {
+    border: 10px solid #ccc; /* grosor lineas cajas */
+    padding: 10px; /* ancho interior cajas */
+    margin-bottom: 20px; /* separacion entre cajas */
+}
+
+legend {
+    font-weight: bold; /* fuente letras subtitulos */
+}
+
+table {
+    width: 100%; /* ancho de espacio de detalles de producto */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd; /* grosor caja de detalle de producto */
+    padding: 8px; /* largo de detalle de caja de producto */
+    text-align: center;
+}
+
+button { /* botones */
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media print {
+    button {
+        display: none; /* Ocultar botones al imprimir */
+    }
+}
